@@ -28,6 +28,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var ConcernName: UITextField!
  
     @IBOutlet weak var Message: UILabel!
+
+    @IBOutlet weak var ConcernImage: UIImageView!
+    
     
 // MARK: Action
     
@@ -36,6 +39,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
         Message.text = "saved succesfully"
     }
     
+    @IBAction func selectConcernIage(sender: AnyObject) {
+        
+        Message.text = "Image Tapped"
+    }
 // MARK: UIField Delegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

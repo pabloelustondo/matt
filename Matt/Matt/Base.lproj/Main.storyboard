@@ -42,9 +42,13 @@
                             </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="136" placeholderIntrinsicHeight="136" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="6Pb-UK-coa">
                                 <rect key="frame" x="30" y="90" width="136" height="136"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6Pb-UK-coa" secondAttribute="height" multiplier="1:1" id="MLS-tk-To2"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gQf-OR-ZPe" appends="YES" id="iax-F3-itq"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -64,11 +68,17 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="ConcernImage" destination="6Pb-UK-coa" id="OLb-SF-uCB"/>
                         <outlet property="ConcernName" destination="JE8-AS-cuX" id="RO7-3r-bfY"/>
                         <outlet property="Message" destination="CZJ-RW-xg6" id="kE9-Hl-dMs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gQf-OR-ZPe">
+                    <connections>
+                        <action selector="selectConcernIage:" destination="BYZ-38-t0r" id="boe-oU-kJV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1022" y="609"/>
         </scene>
