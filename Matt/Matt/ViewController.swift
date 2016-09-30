@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Message.text = ""
+        // Handle the text field’s user input through delegate callbacks.
+        ConcernName.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +34,18 @@ class ViewController: UIViewController {
     @IBAction func ConcernSave(sender: AnyObject) {
         
         Message.text = "saved succesfully"
+    }
+    
+// MARK: UIField Delegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        Message.text = ConcernName.text
     }
 }
 
