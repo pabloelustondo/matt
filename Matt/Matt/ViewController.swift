@@ -89,6 +89,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     
     
+    //I cannot believe I had to do this function to rezie an image no native method?..
     func ResizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
         
