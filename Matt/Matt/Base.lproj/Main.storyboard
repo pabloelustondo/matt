@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,22 +20,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JE8-AS-cuX">
-                                <rect key="frame" x="109" y="50" width="200" height="30"/>
+                                <rect key="frame" x="30" y="50" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Yst-dN-XQ0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHX-6D-6cZ">
-                                <rect key="frame" x="30" y="50" width="69" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="PMV-Bf-o2J"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTG-nC-fcs">
                                 <rect key="frame" x="536" y="560" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
@@ -48,23 +40,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="136" placeholderIntrinsicHeight="136" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="6Pb-UK-coa">
+                                <rect key="frame" x="30" y="90" width="136" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Pb-UK-coa" secondAttribute="height" multiplier="1:1" id="MLS-tk-To2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nHX-6D-6cZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="1QF-cf-Oeu"/>
-                            <constraint firstItem="nHX-6D-6cZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="1s1-YA-ZHM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zTG-nC-fcs" secondAttribute="trailing" constant="10" id="EHi-Wq-8aK"/>
                             <constraint firstItem="JE8-AS-cuX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="F1W-tG-uqx"/>
-                            <constraint firstItem="JE8-AS-cuX" firstAttribute="leading" secondItem="nHX-6D-6cZ" secondAttribute="trailing" constant="10" id="Qx3-Ph-1Vj"/>
-                            <constraint firstItem="nHX-6D-6cZ" firstAttribute="bottom" secondItem="JE8-AS-cuX" secondAttribute="bottom" id="W4A-FF-g21"/>
+                            <constraint firstItem="6Pb-UK-coa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="aof-cz-6Iy"/>
                             <constraint firstItem="JE8-AS-cuX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="bxA-Tr-eP6"/>
-                            <constraint firstItem="JE8-AS-cuX" firstAttribute="leading" secondItem="nHX-6D-6cZ" secondAttribute="trailing" constant="22" id="nI0-Du-vWT"/>
+                            <constraint firstItem="JE8-AS-cuX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="cIi-da-YUd"/>
+                            <constraint firstItem="6Pb-UK-coa" firstAttribute="top" secondItem="JE8-AS-cuX" secondAttribute="bottom" constant="10" id="oyn-t1-oBx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zTG-nC-fcs" secondAttribute="bottom" constant="10" id="sG9-24-0Qj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="F1W-tG-uqx"/>
-                                <exclude reference="nI0-Du-vWT"/>
                             </mask>
                         </variation>
                     </view>
@@ -78,4 +73,7 @@
             <point key="canvasLocation" x="1022" y="609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultImage" width="476" height="458"/>
+    </resources>
 </document>
