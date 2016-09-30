@@ -76,7 +76,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="gQf-OR-ZPe">
                     <connections>
-                        <action selector="selectConcernIage:" destination="BYZ-38-t0r" id="boe-oU-kJV"/>
+                        <action selector="ConcernImageTapped:" destination="BYZ-38-t0r" id="mki-8i-fyt"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

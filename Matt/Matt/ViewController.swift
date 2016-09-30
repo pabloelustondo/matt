@@ -34,15 +34,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
 // MARK: Action
     
-    @IBAction func ConcernSave(sender: AnyObject) {
+    @IBAction func ConcernSave(sender: UITextField) {
         
         Message.text = "saved succesfully"
     }
     
-    @IBAction func selectConcernIage(sender: AnyObject) {
+    @IBAction func ConcernImageTapped(sender: UITapGestureRecognizer) {
         
-        Message.text = "Image Tapped"
+        Message.text = "image tapped"
+        
     }
+
 // MARK: UIField Delegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
