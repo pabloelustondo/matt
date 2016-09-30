@@ -14,6 +14,7 @@
 		E670CA511D9A19BE00C12A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E670CA4F1D9A19BE00C12A15 /* LaunchScreen.storyboard */; };
 		E670CA5C1D9A19BE00C12A15 /* MattTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670CA5B1D9A19BE00C12A15 /* MattTests.swift */; };
 		E670CA671D9A19BE00C12A15 /* MattUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670CA661D9A19BE00C12A15 /* MattUITests.swift */; };
+		E6E374A61D9F145B00B229FC /* ConcernControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E374A51D9F145B00B229FC /* ConcernControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E670CA621D9A19BE00C12A15 /* MattUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MattUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E670CA661D9A19BE00C12A15 /* MattUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MattUITests.swift; sourceTree = "<group>"; };
 		E670CA681D9A19BE00C12A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E374A51D9F145B00B229FC /* ConcernControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E670CA4D1D9A19BE00C12A15 /* Assets.xcassets */,
 				E670CA4F1D9A19BE00C12A15 /* LaunchScreen.storyboard */,
 				E670CA521D9A19BE00C12A15 /* Info.plist */,
+				E6E374A51D9F145B00B229FC /* ConcernControl.swift */,
 			);
 			path = Matt;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E670CA491D9A19BE00C12A15 /* ViewController.swift in Sources */,
+				E6E374A61D9F145B00B229FC /* ConcernControl.swift in Sources */,
 				E670CA471D9A19BE00C12A15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				E670CA6D1D9A19BE00C12A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E670CA6E1D9A19BE00C12A15 /* Build configuration list for PBXNativeTarget "MattTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				E670CA701D9A19BE00C12A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E670CA711D9A19BE00C12A15 /* Build configuration list for PBXNativeTarget "MattUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				E670CA731D9A19BE00C12A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
