@@ -24,6 +24,10 @@ class ConcernControl: UIView{
         button.backgroundColor = UIColor.yellowColor()
         button.text = "1"
         button.textAlignment = NSTextAlignment.Center
+        button.userInteractionEnabled = true;
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ConcernControl.dayButtonTapped(_:)))
+        button.addGestureRecognizer(tapGesture)
+        
         addSubview(button)
         
         
@@ -40,6 +44,10 @@ class ConcernControl: UIView{
         button.textAlignment = NSTextAlignment.Center
  
         addSubview(button3)
+    }
+    
+    func dayButtonTapped(button: UILabel) {
+        print("Button pressed 👍")
     }
 
     override func intrinsicContentSize() -> CGSize {
