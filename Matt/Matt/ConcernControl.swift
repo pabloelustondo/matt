@@ -14,17 +14,30 @@ class ConcernControl: UIView{
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        let button = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let rightBorder = self.frame.width
+        let boxWidth = 30
+        let middleBoxStart = (rightBorder - CGFloat(boxWidth))/2
+     
+        
+        //Day achivement / comitment
+        let button = UILabel(frame: CGRect(x: 0, y: 0, width: boxWidth, height: boxWidth))
         button.backgroundColor = UIColor.yellowColor()
         button.text = "1"
         button.textAlignment = NSTextAlignment.Center
         addSubview(button)
-        let button2 = UILabel(frame: CGRect(x: 30, y: 0, width: 30, height: 30))
+        
+        
+        //General Status
+        let button2 = UILabel(frame: CGRect(x: Int(middleBoxStart), y: 0, width: boxWidth, height: boxWidth))
         button2.backgroundColor = UIColor.greenColor()
         addSubview(button2)
-        let button3 = UILabel(frame: CGRect(x: 60, y: 0, width: 30, height: 30))
+        
+        
+        //SubConcerns
+        let button3 = UILabel(frame: CGRect(x: Int(rightBorder) - boxWidth, y: 0, width: boxWidth, height: boxWidth))
         button3.backgroundColor = UIColor.cyanColor()
-
+        button.text = "1/3"
+        button.textAlignment = NSTextAlignment.Center
  
         addSubview(button3)
     }
