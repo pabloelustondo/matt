@@ -26,6 +26,17 @@ class MattTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testMealInitialization() {
+        // Success case.
+        let potentialItem = Concern(name: "Newest meal", photo: nil, status: 5)
+        XCTAssertNotNil(potentialItem)
+        
+        // Failure cases.
+        let noName = Concern(name: "", photo: nil, status: 0)
+        XCTAssertNil(noName, "Empty name is invalid")
+    }
+    
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {

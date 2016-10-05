@@ -16,6 +16,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         Message.text = ""
         // Handle the text field’s user input through delegate callbacks.
         ConcernName.delegate = self
+
+//ConcernStatus.addObserver(self, forKeyPath: "ConcernStatus")
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
 
     @IBOutlet weak var ConcernImage: UIImageView!
     
+    @IBOutlet weak var ConcernStatus: ConcernControl!
     
 // MARK: Action
     
