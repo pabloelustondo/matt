@@ -16,6 +16,7 @@
 		E670CA671D9A19BE00C12A15 /* MattUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670CA661D9A19BE00C12A15 /* MattUITests.swift */; };
 		E6E374A61D9F145B00B229FC /* ConcernControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E374A51D9F145B00B229FC /* ConcernControl.swift */; };
 		E6E374A81DA5A8B700B229FC /* Concern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E374A71DA5A8B700B229FC /* Concern.swift */; };
+		E6E374AA1DA5B80000B229FC /* ConcernRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E374A91DA5B80000B229FC /* ConcernRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E670CA681D9A19BE00C12A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6E374A51D9F145B00B229FC /* ConcernControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernControl.swift; sourceTree = "<group>"; };
 		E6E374A71DA5A8B700B229FC /* Concern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concern.swift; sourceTree = "<group>"; };
+		E6E374A91DA5B80000B229FC /* ConcernRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E670CA521D9A19BE00C12A15 /* Info.plist */,
 				E6E374A51D9F145B00B229FC /* ConcernControl.swift */,
 				E6E374A71DA5A8B700B229FC /* Concern.swift */,
+				E6E374A91DA5B80000B229FC /* ConcernRow.swift */,
 			);
 			path = Matt;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				E6E374A81DA5A8B700B229FC /* Concern.swift in Sources */,
 				E670CA491D9A19BE00C12A15 /* ViewController.swift in Sources */,
+				E6E374AA1DA5B80000B229FC /* ConcernRow.swift in Sources */,
 				E6E374A61D9F145B00B229FC /* ConcernControl.swift in Sources */,
 				E670CA471D9A19BE00C12A15 /* AppDelegate.swift in Sources */,
 			);
